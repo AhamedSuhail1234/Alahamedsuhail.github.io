@@ -1,11 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ahamed Suhail | Portfolio</title>
+<title>Premium Profile</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -13,286 +14,249 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
-}
-    body{
-    background:#111827;
-}
-
-.suit photo.jpeg{
-    width:230px;
-    height:230px;
-    padding:10px;
-    border-radius:25px;
-    background:rgba(255,255,255,0.15);
-    backdrop-filter:blur(10px);
-    box-shadow:0 15px 35px rgba(0,0,0,.4);
-}
-
-.card suit photo.jpeg{
-    width:100%;
-    height:100%;
-    border-radius:20px;
-    object-fit:cover;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:#0f172a;
-    color:white;
-}
-
-header{
-    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    text-align:center;
-    padding:20px;
-}
+    height:100vh;
 
-h1{
-    font-size:45px;
-    margin:20px;
-}
+    background:
+    radial-gradient(circle at top left,#233554 0%,transparent 40%),
+    radial-gradient(circle at bottom right,#6C63FF 0%,transparent 35%),
+    linear-gradient(135deg,#0B1120,#111827,#1F2937);
 
-span{
-    color:#38bdf8;
-}
-
-p{
-    font-size:18px;
-    line-height:1.7;
-}
-
-button{
-    margin-top:20px;
-    padding:12px 25px;
-    border:none;
-    border-radius:25px;
-    background:#38bdf8;
-    color:black;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-section{
-    padding:50px 10%;
+    overflow:hidden;
 }
 
 .card{
-    background:#1e293b;
-    padding:25px;
-    margin:20px 0;
-    border-radius:15px;
-}
 
-.skills div{
-    margin:20px 0;
-}
+    width:400px;
+    padding:45px;
 
-.bar{
-    background:#334155;
-    height:10px;
-    border-radius:10px;
-}
-
-.html{
-    width:90%;
-    background:#38bdf8;
-    height:10px;
-}
-
-.python{
-    width:85%;
-    background:#38bdf8;
-    height:10px;
-}
-
-.ai{
-    width:75%;
-    background:#38bdf8;
-    height:10px;
-}
-
-.projects{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.project{
-    background:#1e293b;
-    padding:20px;
-    border-radius:15px;
-    width:300px;
-}
-
-a{
-    color:#38bdf8;
-    text-decoration:none;
-}
-
-footer{
     text-align:center;
-    padding:20px;
-    background:#020617;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.45);
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+.profile{
+
+    width:210px;
+    height:210px;
+
+    margin:auto;
+
+    padding:6px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+    135deg,
+    #60A5FA,
+    #7C3AED,
+    #2563EB);
+
+    box-shadow:
+    0 0 25px rgba(96,165,250,.45);
+
+}
+
+.profile img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #fff;
+
+    transition:.5s;
+
+}
+
+.profile img:hover{
+
+    transform:scale(1.05);
+
+}
+
+h1{
+
+    margin-top:28px;
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.job{
+
+    margin-top:10px;
+
+    font-size:18px;
+
+    color:#60A5FA;
+
+    font-weight:600;
+
+}
+
+.about{
+
+    margin-top:18px;
+
+    color:#D1D5DB;
+
+    line-height:30px;
+
+    font-size:16px;
+
+}
+
+button{
+
+    margin-top:30px;
+
+    padding:15px 42px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 30px rgba(37,99,235,.45);
+
+}
+
+.social{
+
+    margin-top:35px;
+
+}
+
+.social a{
+
+    width:48px;
+
+    height:48px;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:8px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    transition:.35s;
+
+}
+
+.social a:hover{
+
+    background:#2563EB;
+
+    transform:translateY(-6px);
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
-<header>
+<div class="card">
 
 <div class="profile">
 
-<img src="suit photo.jpeg">
+<img src="suit photo.jpeg" alt="Profile">
 
-<h1>Hello, I'm <span>Suhail</span></h1>
+</div>
 
-<p>
-Computer Science & Data Science Student<br>
-Aspiring AI Developer | Programmer | Web Developer
+<h1>Your Name</h1>
+
+<div class="job">
+Full Stack Developer
+</div>
+
+<p class="about">
+I build modern, responsive websites with elegant UI, smooth animations, and high-performance user experiences.
 </p>
 
-<button>Download Resume</button>
+<button>View Portfolio</button>
+
+<div class="social">
+
+<a href="#">🌐</a>
+<a href="#">💼</a>
+<a href="#">📧</a>
+<a href="#">📱</a>
 
 </div>
 
-</header>
-
-
-
-<section>
-
-<h2>About Me</h2>
-
-<div class="card">
-
-<p>
-I am passionate about Artificial Intelligence, programming,
-Linux, and creating innovative software solutions.
-I enjoy learning new technologies and building real-world projects.
-</p>
-
 </div>
-
-</section>
-
-
-
-<section>
-
-<h2>My Skills</h2>
-
-<div class="card skills">
-
-<div>
-Python
-<div class="bar"><div class="python"></div></div>
-</div>
-
-
-<div>
-HTML & CSS
-<div class="bar"><div class="html"></div></div>
-</div>
-
-
-<div>
-Artificial Intelligence
-<div class="bar"><div class="ai"></div></div>
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section>
-
-<h2>Projects</h2>
-
-<div class="projects">
-
-<div class="project">
-<h3>Portfolio Website</h3>
-<p>
-Personal website created using HTML and CSS.
-</p>
-</div>
-
-
-<div class="project">
-<h3>Python Projects</h3>
-<p>
-Programs and automation projects using Python.
-</p>
-</div>
-
-
-<div class="project">
-<h3>AI Projects</h3>
-<p>
-Exploring machine learning and artificial intelligence.
-</p>
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section>
-
-<h2>Education</h2>
-
-<div class="card">
-
-<p>
-B.Sc. Computer Science<br>
-B.Sc. Data Science Student
-</p>
-
-</div>
-
-</section>
-
-
-
-<section>
-
-<h2>Contact</h2>
-
-<div class="card">
-
-<p>
-GitHub:
-<a href="https://github.com/AhamedSuhail1234">
-AhamedSuhail1234
-</a>
-</p>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-© 2026 Ahamed Suhail
-
-</footer>
-
 
 </body>
 </html>
